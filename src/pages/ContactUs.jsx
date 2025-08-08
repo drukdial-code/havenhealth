@@ -12,7 +12,8 @@ function ContactUs() {
 
   const [submitted, setSubmitted] = useState(false)
 
-  const BASE_URL = 'http://192.168.2.11:8080'
+  // const BASE_URL = 'http://192.168.2.11:8080'
+  const BASE_URL = 'http://havenhealthcare.us-east-2.elasticbeanstalk.com/' // Replace with your actual API base URL
 
   const handleChange = (e) => {
     const { name, value } = e.target
