@@ -1,0 +1,127 @@
+/* Admin Dashboard Header */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px;
+  align-items: center;
+} 
+
+.bg-primary-700 {
+  background-color: #203435;
+}
+
+.text-primary-600 {
+  color: #fbb140;
+}
+
+.border-primary-600 {
+  border-color: #fbb140;
+}
+
+.text-primary-800 {
+  color: #b97a13;
+}
+
+/* Tab Navigation */
+.admin-tabs button {
+  font-weight: 600;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+.admin-tabs button:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.admin-tabs .active {
+  color: #fbb140;
+  border-bottom: 2px solid #fbb140;
+}
+
+/* Admin Messages Table */
+.admin-messages-table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(32, 52, 53, 0.07);
+  background: #fff;
+}
+
+.admin-messages-table th,
+.admin-messages-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f3f3f3;
+  text-align: left;
+}
+
+.admin-messages-table th {
+  background: #fbb140;
+  color: #203435;
+  font-weight: 700;
+}
+
+.admin-messages-table tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-messages-table tr:hover {
+  background: #fff8ec;
+}
+
+.admin-messages-table .actions button {
+  background: #ffe0e0;
+  color: #b71c1c;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.admin-messages-table .actions button:hover {
+  background: #ffbdbd;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .admin-messages-table th,
+  .admin-messages-table td {
+    padding: 0.5rem 0.3rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Search Bar */
+.admin-search-bar input {
+  border: 1px solid #fbb140;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 250px;
+  transition: border 0.2s;
+}
+
+.admin-search-bar input:focus {
+  border-color: #b97a13;
+  outline: none;
+}
+
+.admin-delete-btn {
+  background: linear-gradient(90deg, #ffb140 0%, #ff6961 100%);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.3rem 1rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(251,177,64,0.08);
+  transition: background 0.2s;
+}
+.admin-delete-btn:hover {
+  background: #ff6961;
+}
